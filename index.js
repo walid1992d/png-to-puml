@@ -18,9 +18,9 @@ filePath = path.resolve(process.cwd(), filePath);
 try{
 const image = await Jimp.read(filePath);
 const pixels = [];
-for (i = 0; i < image.bitmap.width; i++) {
+for (i = 0; i < image.bitmap.height; i++) {
   const pixelRow = [];
-  for (j = 0; j < image.bitmap.height; j++) {
+  for (j = 0; j < image.bitmap.width; j++) {
     const color = Jimp.intToRGBA(image.getPixelColor(j, i));
     const hexA = getColorHex(color.a);
     pixelRow.push(hexA);
