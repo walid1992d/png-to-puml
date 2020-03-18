@@ -12,7 +12,7 @@ if(!filePath) {
   console.log("NO ARGUMENT WAS SENT");
   process.exit(1);
 }
-const fileName = filePath.split(".")[0];
+const fileName = filePath.split(".")[0].split("-").join("_");
 filePath = path.resolve(process.cwd(), filePath);
 
 try{
