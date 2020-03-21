@@ -1,13 +1,14 @@
 {
   "name": "png-to-puml",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Converts png images to puml icon",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "png-to-puml": "index.js"
+    "png-to-puml": "convert-png.js",
+    "png-to-puml-folder": "convert-png-folder.js"
   },
   "author": "",
   "license": "ISC",
